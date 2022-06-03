@@ -1,0 +1,152 @@
+body {
+    background-image: url(../images/background-image.jpg);
+    background-repeat: no-repeat;
+    background-color: #0A131C;
+    height: 100vh;
+}
+
+header h1 {
+    font-size: 40px;
+    text-align: left;
+    margin: 20px;
+    color: lightgrey;
+}
+
+header p {
+    text-align: center;
+    font-size: 20px;
+    font-weight:200;
+    color: lightgrey;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.container .input-search {
+    background-color: #157BDF;
+    font-size: 18px;
+    height: 30px;
+    margin: 20px;
+    outline: none;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    color:aliceblue;
+}
+
+::placeholder {
+    color:aliceblue;
+    font-size: 16px;
+    opacity: 0.5;
+}
+
+.container .search-button {
+    padding: 5px 20px;
+    border-radius: 5px;
+    background-color: lightgrey;
+    border: 1px solid darkgrey;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+}
+
+.weather-section {
+    margin: 20px;
+}
+
+.weather-container {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.weather-container h2,
+.weather-container h3,
+.weather-container img,
+.weather-container p,
+.weather-container span {
+    margin: 10px;
+}
+
+.weather-container p,
+.weather-container span {
+    font-size: 20px;
+}
+
+.forecast-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.forecast-section .forecast-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.forecast-section .forecast-list li {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #000;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    width: 250px;
+}
+
+.forecast-section .forecast-list li h2,
+.forecast-section .forecast-list li h3,
+.forecast-section .forecast-list li img,
+.forecast-section .forecast-list li p {
+    margin: 5px;
+    font-size: 20px;
+    color: lightgrey;
+    font-weight: 600;
+    text-align: center;
+}
+
+.powered {
+    margin-top: 80px;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    color: lightgrey;
+    letter-spacing: 2px;
+}
+
+.powered .created-by {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.powered a {
+    font-size: 15px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 700px) {
+    
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    header p {
+        font-size: 16px;
+    }
+
+    .container {
+        margin: 20px 0;
+    }
+}
