@@ -4,38 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Previsão do tempo livre de anúncios"> 
+    <title>Free Weather Forecast</title>
     <link rel="stylesheet" href="./src/css/reset.css">
     <link rel="stylesheet" href="./src/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;1,200&display=swap" rel="stylesheet">
-    <title>Free Weather Forecast</title>
-    <link rel="icon" type="image/x-icon" href="/src/images/favicon.png">
+    <link rel="icon" type="image/x-icon" href="./src/images/favicon.png">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"></script>
+
 </head>
 <body>
-    <header>
-        <h1 class="main-title">Free Weather Forecast</h1>
-        <p>Previsão do tempo livre de anúncios</p>
+    <header>         
+        <h1 class="main-title">Free Weather Forecast</h1>            
+        <p>"Previsão do tempo livre de anúncios"</p>
     </header>
+
     <div class="container">     
         <input placeholder="Digite o nome da cidade" type="text" class="input-search">
         <button class="search-button">Buscar</button>        
     </div>
 
-    <section class="weather-section">
+    <section class="weather-section"></section>
     
-    </section>
     <section class="forecast-section">
         <h2 class="forecast-title"></h2>
-        <ul class="forecast-list">
-            
-        </ul>
+        <ul class="forecast-list"></ul>
     </section>
 
-    <div class="powered">
-        <a href="https://www.linkedin.com/in/alexandre-luiz-cerutti-lima-675b3737" target="_blank" class="created-by">Criado por: Alexandre Luiz</a>
-        <a href="https://www.weatherapi.com/" title="Free Weather API" target="_blank">Powered by WeatherAPI.com</a> 
-    </div>
+    <footer class="powered">       
+        <a href="https://www.weatherapi.com/" title="Free Weather API" target="_blank">Powered by WeatherAPI.com</a>
+        <h5>Todos os direitos reservados - 2022</h5>
+        <ul class="contact-list">
+            <li><a href="mailto: alexandre.cerutti@live.com"><i class="fas fa-envelope"></i></a></li>
+            <li><a href="https://github.com/Alex-Lima84" target="_blank"><i class="fab fa-github"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/alexandre-luiz-cerutti-lima-675b3737" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="https://www.instagram.com/alexandreluizcl/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+    </footer>
    
     <script type="module" src="./src/scripts/index.js"></script>
 </body>
