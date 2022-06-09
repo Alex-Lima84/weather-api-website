@@ -51,7 +51,7 @@ async function getForecastInfo(cityName) {
             const forecastDay = newDate.toLocaleString("pt-BR", {day: "numeric"})
             
             forecast.innerHTML += ` <li> 
-                                        <h2>${forecastWeekDay} - 0${forecastDay}</h2>
+                                        <h2>${forecastWeekDay} - ${forecastDay}</h2>
                                         <h3>${item.day.condition.text}</h3>
                                         <p>${item.day.daily_chance_of_rain} % - ${item.day.totalprecip_mm} mm</p>
                                         <img alt="ícone do clima" src="${item.day.condition.icon}">
